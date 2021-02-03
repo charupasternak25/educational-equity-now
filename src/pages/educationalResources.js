@@ -1,14 +1,47 @@
-import React from 'react';
-import { Link } from 'gatsby'
+import React, { Component } from 'react';
+import Navbar from '../components/Navbar';
+import SidebarNav from '../components/SidebarNav';
+import Content from '../components/Content';
 
-import Layout from '../components/layout'
+class EducationalResources extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        isMenuVisible: false,
+        loading: 'is-loading'
+    }
+    this.handleToggleMenu = this.handleToggleMenu.bind(this);    
+  }
 
-const EducationalResources = () => (
-  <Layout>
-    <h1>Educational Resources</h1>
-    {/* <p>Welcome to page 2</p> */}
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+  componentDidMount () {
+    this.timeoutId = setTimeout(() => {
+      this.setState({ loading: '' });
+    }, 100);
+  }
 
-export default EducationalResources
+  componentWillUnmount () {
+    if(this.timeoutId) {
+      clearTimeout(this.timeoutId);
+    }
+  }
+
+  handleToggleMenu() {
+    this.setState({
+      isMenuVisible: !this.state.isMenuVisible
+    })
+  }
+
+  render() {
+    const { children } = this.props;
+
+    return(
+        <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
+          <Navbar onToggleMenu={this.handleToggleMenu} />
+          <SidebarNav onToggleMenu={this.handleToggleMenu} />
+          <Content />          
+        </div>
+    );
+  }
+}
+
+export default EducationalResources;
