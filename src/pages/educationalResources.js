@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import SidebarNav from '../components/SidebarNav';
-
-const ELAImage = require('../images/ELA.jpg');
+import Content from '../components/Content';
 
 class EducationalResources extends Component {
   constructor(props) {
@@ -32,7 +31,6 @@ class EducationalResources extends Component {
     })
   }
 
-  
   render() {
     const { children } = this.props;
 
@@ -40,40 +38,7 @@ class EducationalResources extends Component {
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
           <Navbar onToggleMenu={this.handleToggleMenu} />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
-          <div className="container">
-            <div className="row">
-              <div className="col s12 m6 l4">
-                <div className="card">
-                  <div className="card-image">
-                    <img src={ELAImage} alt="" />
-                  </div>
-                  <div className="card-content">
-                    <span className="card-title green-text">English Language</span>                                        
-                  </div>
-                </div>
-              </div>
-              <div className="col s12 m6 l4">
-                <div className="card">
-                  <div className="card-image">
-                    <img src={ELAImage} alt="" />
-                  </div>
-                  <div className="card-content">
-                    <span className="card-title green-text">Math</span>                                        
-                  </div>
-                </div>
-              </div>
-              <div className="col s12 m6 l4">
-                <div className="card">
-                  <div className="card-image">
-                    <img src={ELAImage} alt="" />
-                  </div>
-                  <div className="card-content">
-                    <span className="card-title green-text">Science</span>                                        
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Content />          
         </div>
     );
   }
