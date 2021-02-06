@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar';
-import SidebarNav from '../components/SidebarNav';
-import Content from '../components/Content';
-import EENImage from '../images/een.jpg';
-// const EENImage = require('../images/een.jpg');
+import styled from 'styled-components';
+import Navbar from '../../components/Navbar';
+import SidebarNav from '../../components/SidebarNav';
+import Cards from '../../components/Cards';
 
-class EducationalResources extends Component {
+import computerImage from '../../images/computerscience.jpeg';
+
+const StyledConatiner = styled.div`
+    padding-top: 20px;
+`;
+
+class ComputerSkills extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,16 +40,20 @@ class EducationalResources extends Component {
 
   render() {
     const { children } = this.props;
-    const LinkColor = "#1b1f22";
 
     return(
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
-          <Navbar backgroundImage={EENImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="750px" imagePosition="center" />
+          <Navbar backgroundImage={computerImage} linkColor={'#fff'} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="center" />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
-          <Content />          
+          <StyledConatiner className="container">
+            <div className="row">
+              
+            </div>
+          </StyledConatiner>          
         </div>
     );
   }
 }
 
-export default EducationalResources;
+export default ComputerSkills;
+

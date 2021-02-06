@@ -3,21 +3,20 @@ import { Link } from 'gatsby';
 import HelmetScripts from './HelmetScripts';
 import styled from 'styled-components';
 
-const EENImage = require('../images/een.jpg');
-const LinkColor = "#1b1f22";
+// const LinkColor = "#1b1f22";
 
 const StyledHeroImage = styled.header`
-  background: url(${EENImage});
+  background: url(${props => props.backgroundImage});
   background-size: cover;
-  background-position: center;
-  min-height: 750px;
+  background-position: ${props => props.imagePosition};  
+  min-height: ${props => props.height};
 
   @media screen and (max-width: 670px) {
     min-height: 400px;
   }
 
   .linkColor {
-    color: ${LinkColor};
+    color: ${props => props.linkColor};
     font-weight: 600;
     font-size: 16px;
     border-bottom: none !important;
@@ -29,10 +28,11 @@ const StyledHeroImage = styled.header`
 `;
 
 const Navbar = (props) => {
+  console.log(props);
   return (
     <div>
         <HelmetScripts />
-        <StyledHeroImage>
+        <StyledHeroImage backgroundImage = {props.backgroundImage} height={props.height} linkColor={props.linkColor} imagePosition={props.imagePosition}>
           <nav className="nav-wrapper transparent">
           <div class="container">
             <a className="menu-link hide-on-med-and-up" onClick={props.onToggleMenu} href="javascript:;"><i class="material-icons">menu</i></a>              
