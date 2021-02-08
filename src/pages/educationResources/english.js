@@ -3,10 +3,12 @@ import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import SidebarNav from '../../components/SidebarNav';
 import Cards from '../../components/Cards';
+
 import freeReadingProgramImage from '../../images/freeReadingProgram.png';
 import starFallImage from '../../images/starfall.png';
 import levarBurtonReadsImage from '../../images/levarBurtonReads.png';
 import readingAtoZImage from '../../images/readingA-Z.svg';
+
 import englishImage from '../../images/english.jpg';
 
 const StyledConatiner = styled.div`

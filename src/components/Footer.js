@@ -5,7 +5,7 @@ const Footer = (props) => (
     <footer id="footer" style={props.timeout ? {display: 'none'} : {}}>
         <p className="copyright">
             &copy; Educational Equity Now. 
-            Design: <a href="">Charu Pasternak</a>.
+            Design By: <a href="">Charu Pasternak</a>.
             In collaboration with: <a href="">SPED committee.</a> 
             Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js</a></p>
     </footer>

@@ -7,7 +7,8 @@ import styled from 'styled-components';
 
 const StyledHeroImage = styled.header`
   background: url(${props => props.backgroundImage});
-  background-size: cover;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
   background-position: ${props => props.imagePosition};  
   min-height: ${props => props.height};
 
@@ -27,8 +28,7 @@ const StyledHeroImage = styled.header`
 }
 `;
 
-const Navbar = (props) => {
-  console.log(props);
+const Navbar = (props) => {  
   return (
     <div>
         <HelmetScripts />
@@ -40,7 +40,7 @@ const Navbar = (props) => {
                 <li><Link to="/educationalResources" className="linkColor">Educational Resources</Link></li>
                 <li><Link to="/communityResources" className="linkColor">Community Resources</Link></li>
                 <li><Link to="/professionalDevelopment" className="linkColor">Professional Development</Link></li>
-                <li><Link to="/contact" className="linkColor">Contact</Link></li>                
+                <li><Link to="/contact" className="linkColor">Contact</Link></li>
               </ul>              
             </div>
           </nav>

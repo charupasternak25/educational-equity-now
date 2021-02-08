@@ -8,11 +8,12 @@ const Header = () => (
       <div className="inner">
         <h1>Educational Equity NOW</h1>
         <p>
-          Educational Equity Now is a website that was created by Niels and Charu Pasternak. 
-          It is designed to support people who experience disabilities, educators who work in 
-          Special Education, and other allies. This website offers support by providing a variety 
-          of free educational resources and a forum for asking questions and making positive connections 
-          with others.          
+          Educational Equity Now is a website that is designed to support students 
+          and especially those who experience exceptionalities, educators, parents, and 
+          other allies. This website offers support by providing links to a variety of 
+          educational resources, community resources, professional development resources 
+          for educators and parents, and a forum for asking questions related to education 
+          and supporting others.
         </p>
       </div>
     </div>

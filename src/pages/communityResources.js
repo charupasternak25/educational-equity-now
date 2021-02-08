@@ -1,14 +1,49 @@
-import React from 'react';
-import { Link } from 'gatsby'
+import React, { Component } from 'react';
+import Navbar from '../components/Navbar';
+import SidebarNav from '../components/SidebarNav';
 
-import Layout from '../components/layout'
+import communityResourcesImage from '../images/MainPageImages/communityResources.jpg';
 
-const CommunityResources = () => (
-  <Layout>
-    <h1>Community Resources</h1>
-    {/* <p>Welcome to page 2</p> */}
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+class CommunityResources extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        isMenuVisible: false,
+        loading: 'is-loading'
+    }
+    this.handleToggleMenu = this.handleToggleMenu.bind(this);    
+  }
 
-export default CommunityResources
+  componentDidMount () {
+    this.timeoutId = setTimeout(() => {
+      this.setState({ loading: '' });
+    }, 100);
+  }
+
+  componentWillUnmount () {
+    if(this.timeoutId) {
+      clearTimeout(this.timeoutId);
+    }
+  }
+
+  handleToggleMenu() {
+    this.setState({
+      isMenuVisible: !this.state.isMenuVisible
+    })
+  }
+
+  render() {
+    const { children } = this.props;
+    const LinkColor = "#1b1f22";
+
+    return(
+        <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
+          <Navbar backgroundImage={communityResourcesImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="750px" imagePosition="center" />
+          <SidebarNav onToggleMenu={this.handleToggleMenu} />
+          
+        </div>
+    );
+  }
+}
+
+export default CommunityResources;
