@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import SidebarNav from '../components/SidebarNav';
 import Content from '../components/Content';
-import EENImage from '../images/een.jpg';
-// const EENImage = require('../images/een.jpg');
+import educationalResourcesImage from '../images/MainPageImages/educationalResources.jpg';
 
 class EducationalResources extends Component {
   constructor(props) {
@@ -39,7 +38,7 @@ class EducationalResources extends Component {
 
     return(
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
-          <Navbar backgroundImage={EENImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="750px" imagePosition="center" />
+          <Navbar backgroundImage={educationalResourcesImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="750px" imagePosition="center" />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
           <Content />          
         </div>
