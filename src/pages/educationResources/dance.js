@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import SidebarNav from '../../components/SidebarNav';
+import Footer from '../../components/Footer';
 import Cards from '../../components/Cards';
 
 import DanceImage from '../../images/dance.jpg';
@@ -49,7 +50,8 @@ class Dance extends Component {
             <div className="row">
               
             </div>
-          </StyledConatiner>          
+          </StyledConatiner>
+          <Footer />
         </div>
     );
   }

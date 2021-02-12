@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import SidebarNav from '../components/SidebarNav';
 import Content from '../components/Content';
-import educationalResourcesImage from '../images/MainPageImages/educationalResources.jpg';
+import Footer from '../components/Footer';
+import educationalResourcesImage from '../images/MainPageImages/educationalResources.png';
 
 class EducationalResources extends Component {
   constructor(props) {
@@ -38,9 +39,10 @@ class EducationalResources extends Component {
 
     return(
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
-          <Navbar backgroundImage={educationalResourcesImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="750px" imagePosition="center" />
+          <Navbar backgroundImage={educationalResourcesImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="center" />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
-          <Content />          
+          <Content />
+          <Footer />
         </div>
     );
   }

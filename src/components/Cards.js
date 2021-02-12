@@ -11,7 +11,7 @@ class Cards extends Component {
                   </div>
                   <div className="card-content">
                     <span className="card-title white-text center">
-                      <a className="link-styles" href={this.props.cardLink}>{this.props.cardTitle}</a>
+                      <a className="link-styles" href={this.props.cardLink} target={this.props.target}>{this.props.cardTitle}</a>
                     </span>
                   </div>
                 </div>

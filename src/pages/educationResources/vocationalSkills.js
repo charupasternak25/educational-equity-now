@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import SidebarNav from '../../components/SidebarNav';
+import Footer from '../../components/Footer';
 import Cards from '../../components/Cards';
 import vocationalImage from '../../images/vocational.jpeg';
 import transitionImage from '../../images/Transition.jpg';
@@ -40,6 +41,7 @@ class VocationalSkills extends Component {
 
   render() {
     const { children } = this.props;
+    const externalTarget = "_blank";
 
     return(
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
@@ -47,9 +49,10 @@ class VocationalSkills extends Component {
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
           <StyledConatiner className="container">
             <div className="row">
-              <Cards cardImage={transitionImage} cardLink="https://sites.google.com/mesd.k12.or.us/oregontransitioneducation/home" cardTitle="Oregon Transition Education" altText="Oregon Transition Education" />              
+              <Cards cardImage={transitionImage} cardLink="https://sites.google.com/mesd.k12.or.us/oregontransitioneducation/home" cardTitle="Oregon Transition Education" altText="Oregon Transition Education" target={externalTarget} />              
             </div>
-          </StyledConatiner>          
+          </StyledConatiner>
+          <Footer />          
         </div>
     );
   }

@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import SidebarNav from '../../components/SidebarNav';
+import Footer from '../../components/Footer';
 import Cards from '../../components/Cards';
+import {
+  scienceMainImage,
+  mysteryScienceImage,
+  showAboutScienceImage
+} from '../../images/EducationalResources/Science/index.js';
 
-import ScienceImage from '../../images/science.jpg';
-import showAboutScienceImage from '../../images/showAboutScience.jpeg';
-import mysteryScience from '../../images/mysteryScience.png';
+import {
+  ixlImage
+} from '../../images/EducationalResources/English/index.js';
 
 const StyledConatiner = styled.div`
     padding-top: 20px;
@@ -42,17 +48,20 @@ class Science extends Component {
 
   render() {
     const { children } = this.props;
+    const externalTarget = "_blank";
 
     return(
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
-          <Navbar backgroundImage={ScienceImage} linkColor={'#1b1f22'} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="top" />
+          <Navbar backgroundImage={scienceMainImage} linkColor={'#1b1f22'} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="top" />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
           <StyledConatiner className="container">
             <div className="row">
-              <Cards cardImage={showAboutScienceImage} cardLink="https://theshowaboutscience.com/" cardTitle="The show about Science" altText="The show about Science" />
-              <Cards cardImage={mysteryScience} cardLink="https://mysteryscience.com/" cardTitle="Mystery Science" altText="Mystery Science" />                    
+              <Cards cardImage={showAboutScienceImage} cardLink="https://theshowaboutscience.com/" cardTitle="The show about Science" altText="The show about Science" target={externalTarget} />
+              <Cards cardImage={mysteryScienceImage} cardLink="https://mysteryscience.com/" cardTitle="Mystery Science" altText="Mystery Science" target={externalTarget} />
+              <Cards cardImage={ixlImage} cardLink="https://www.ixl.com/" cardTitle="IXL" altText="IXL" target={externalTarget} />
             </div>
           </StyledConatiner>
+          <Footer />
         </div>
     );
   }

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import SidebarNav from '../components/SidebarNav';
+import Footer from '../components/Footer';
 
-import communityResourcesImage from '../images/MainPageImages/communityResources.jpg';
+import communityResourcesImage from '../images/MainPageImages/communityResources.png';
 
 class CommunityResources extends Component {
   constructor(props) {
@@ -34,13 +35,13 @@ class CommunityResources extends Component {
 
   render() {
     const { children } = this.props;
-    const LinkColor = "#1b1f22";
+    const LinkColor = "#fff";
 
     return(
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
-          <Navbar backgroundImage={communityResourcesImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="750px" imagePosition="center" />
+          <Navbar backgroundImage={communityResourcesImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="center" />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
-          
+          <Footer />
         </div>
     );
   }
