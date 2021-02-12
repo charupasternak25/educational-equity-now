@@ -1,0 +1,13 @@
+export const englishMainImage = require('./english.jpg');
+export const freeReadingProgramImage = require('./freeReadingProgram.png');
+export const starFallImage = require('./starfall-logo.jpg');
+export const levarBurtonReadsImage = require('./levarBurtonReads.png');
+export const readingAtoZImage = require('./readingA-Z.svg');
+export const stuffYouShouldKnowImage = require('./stuffYouShouldKnow.webp');
+export const textHelpImage = require('./texthelp-logo.svg');
+export const newselaImage = require('./newsela-logo.png');
+export const mobyMaxImage = require('./mobymax-logo.jpeg');
+export const iReadyImage = require('./I-Ready-logo.png');
+export const ixlImage = require('./iXL-Logo.jpg');
+export const storyLineOnlineImage = require('./storylineOnline.png');
+export const n2yImage = require('./n2y.svg');

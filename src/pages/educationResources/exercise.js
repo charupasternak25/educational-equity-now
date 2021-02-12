@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import SidebarNav from '../../components/SidebarNav';
+import Footer from '../../components/Footer';
 import Cards from '../../components/Cards';
 
 import ExerciseImage from '../../images/fine-motorskills.jpg';
@@ -50,7 +51,7 @@ class Exercise extends Component {
                           
             </div>
           </StyledConatiner>
-          
+          <Footer />
         </div>
     );
   }
