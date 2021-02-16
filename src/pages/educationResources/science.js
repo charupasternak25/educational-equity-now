@@ -57,7 +57,7 @@ class Science extends Component {
           <StyledConatiner className="container">
             <div className="row">
               <Cards cardImage={showAboutScienceImage} cardLink="https://theshowaboutscience.com/" cardTitle="The show about Science" altText="The show about Science" target={externalTarget} />
-              <Cards cardImage={mysteryScienceImage} cardLink="https://mysteryscience.com/" cardTitle="Mystery Science" altText="Mystery Science" target={externalTarget} />
+              <Cards cardImage={mysteryScienceImage} cardLink="https://mysteryscience.com/" cardTitle="Mystery Science" altText="Mystery Science" cardColor={'#fff'} target={externalTarget} />
               <Cards cardImage={ixlImage} cardLink="https://www.ixl.com/" cardTitle="IXL" altText="IXL" target={externalTarget} />
             </div>
           </StyledConatiner>

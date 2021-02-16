@@ -1,3 +1,4 @@
-export const mathMainImage = require('./math.png');
+export const mathMainImagePng = require('./math.png');
+export const mathMainImageWebp = require('./math.webp');
 export const khanAcademyImage = require('./khanAcademy.png');
 export const toyTheaterImage = require('./toyThearter.gif');

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { isSafari, isIOS, isMobileSafari } from 'react-device-detect';
 import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import SidebarNav from '../../components/SidebarNav';
@@ -6,7 +7,8 @@ import Footer from '../../components/Footer';
 import Cards from '../../components/Cards';
 
 import {
-  mathMainImage,
+  mathMainImagePng,
+  mathMainImageWebp,
   khanAcademyImage,
   toyTheaterImage
 } from '../../images/EducationalResources/Math/index.js';
@@ -20,6 +22,9 @@ import {
 const StyledConatiner = styled.div`
     padding-top: 20px;
 `;
+
+const isSafariBrowser = isSafari || isIOS || isMobileSafari;
+const mathMainImage = isSafariBrowser ? mathMainImagePng : mathMainImageWebp;
 
 class Math extends Component {
   constructor(props) {

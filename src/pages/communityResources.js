@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import { isSafari, isIOS, isMobileSafari } from 'react-device-detect';
 import Navbar from '../components/Navbar';
 import SidebarNav from '../components/SidebarNav';
 import Footer from '../components/Footer';
 
-import communityResourcesImage from '../images/MainPageImages/communityResources.png';
+import communityResourcesImagePng from '../images/MainPageImages/communityResources.png';
+import communityResourcesImageWebp from '../images/MainPageImages/communityResources.webp';
+
+const isSafariBrowser = isSafari || isIOS || isMobileSafari;
+const communityResourcesImage = isSafariBrowser ? communityResourcesImagePng : communityResourcesImageWebp;
 
 class CommunityResources extends Component {
   constructor(props) {

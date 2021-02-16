@@ -1,4 +1,5 @@
-export const socialEmotionalSkillsMainImage = require('./socialSkills.png');
+export const socialEmotionalSkillsMainImagePng = require('./socialSkills.png');
+export const socialEmotionalSkillsMainImageWebp = require('./socialSkills.png');
 export const centerventionImage = require('./centervention-logo.png');
 export const childMindInstituteImage = require('./childMindInstitute.jpeg');
 export const gratefulnessImage = require('./gratefulness.png');

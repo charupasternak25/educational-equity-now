@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { isSafari, isIOS, isMobileSafari } from 'react-device-detect';
 import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import SidebarNav from '../../components/SidebarNav';
@@ -6,13 +7,17 @@ import Footer from '../../components/Footer';
 import Cards from '../../components/Cards';
 
 import {
-  stemSkillsMainImage,
+  stemSkillsMainImagePng,
+  stemSkillsMainImageWebp,
   hourofCodeImage,
   interlandImage,
   tynkerImage
 } from '../../images/EducationalResources/Computer/index.js';
 
 import { khanAcademyImage } from '../../images/EducationalResources/Math/index.js';
+
+const isSafariBrowser = isSafari || isIOS || isMobileSafari;
+const stemSkillsMainImage = isSafariBrowser ? stemSkillsMainImagePng : stemSkillsMainImageWebp;
 
 const StyledConatiner = styled.div`
     padding-top: 20px;

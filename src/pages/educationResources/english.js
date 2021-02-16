@@ -64,11 +64,11 @@ class English extends Component {
             <div className="row">
               <Cards cardImage={freeReadingProgramImage} cardLink="https://www.freereadingprogram.com/" cardTitle="Free Reading Program" altText="Free reading program" target={externalTarget} />
               <Cards cardImage={starFallImage} cardLink="https://www.starfall.com/h/" cardTitle="Starfall" altText="Starfall" target={externalTarget} />
-              <Cards cardImage={levarBurtonReadsImage} cardLink="https://www.levarburtonpodcast.com/" cardTitle="LeVar Burton Reads" altText="LeVar Burton Reads" target={externalTarget} />
+              <Cards cardImage={levarBurtonReadsImage} cardLink="https://www.levarburtonpodcast.com/" cardTitle="LeVar Burton Reads"altText="LeVar Burton Reads" target={externalTarget} />
               <Cards cardImage={readingAtoZImage} cardLink="https://www.readinga-z.com/" cardTitle="Reading A to Z" altText="Reading A to Z" target={externalTarget} />
               <Cards cardImage={stuffYouShouldKnowImage} cardLink="https://www.iheart.com/podcast/105-stuff-you-should-know-26940277/" cardTitle="Stuff you should know" altText="Stuff you should know" target={externalTarget} />
               <Cards cardImage={textHelpImage} cardLink="https://www.texthelp.com/en-us/products/read-write/" cardTitle="TextHelp" altText="TextHelp" target={externalTarget} />
-              <Cards cardImage={newselaImage} cardLink="https://newsela.com/" cardTitle="Newsela" altText="Newsela" target={externalTarget} />
+              <Cards cardImage={newselaImage} cardLink="https://newsela.com/" cardTitle="Newsela" cardColor={'#fff'} altText="Newsela" target={externalTarget} />
               <Cards cardImage={mobyMaxImage} cardLink="https://www.mobymax.com/" cardTitle="MobyMax" altText="MobyMax" target={externalTarget} />
               <Cards cardImage={iReadyImage} cardLink="https://login.i-ready.com/" cardTitle="iReady" altText="iReady" target={externalTarget} />
               <Cards cardImage={ixlImage} cardLink="https://www.ixl.com/" cardTitle="IXL" altText="IXL" target={externalTarget} />
