@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import { isSafari, isIOS, isMobileSafari } from 'react-device-detect';
 import Navbar from '../components/Navbar';
 import SidebarNav from '../components/SidebarNav';
-import Content from '../components/Content';
+import Content from '../components/ContentforEducation';
 import Footer from '../components/Footer';
-import educationalResourcesImage from '../images/MainPageImages/educationalResources.png';
+import educationalResourcesImagePng from '../images/MainPageImages/educationalResources.png';
+import educationalResourcesImageWebp from '../images/MainPageImages/educationalResources.webp';
+
+const isSafariBrowser = isSafari || isIOS || isMobileSafari;
+
+const educationalResourcesImage = isSafariBrowser ? educationalResourcesImagePng : educationalResourcesImageWebp;
 
 class EducationalResources extends Component {
   constructor(props) {

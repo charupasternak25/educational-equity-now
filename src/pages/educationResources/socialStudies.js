@@ -63,7 +63,7 @@ class SocialStudies extends Component {
               <Cards cardImage={kidNuzImage} cardLink="https://www.kidnuz.org/" cardTitle="Kid Nuz" altText="Kid Nuz" target={externalTarget} />
               <Cards cardImage={n2yImage} cardLink="https://www.n2y.com/" cardTitle="n2y" altText="n2y" target={externalTarget} />
               <Cards cardImage={historyClassPodcastImage} cardLink="https://www.iheart.com/podcast/stuff-you-missed-in-history-cl-21124503/" cardTitle="iHeart Radio" altText="iHeart Radio" target={externalTarget} />              
-              <Cards cardImage={newselaImage} cardLink="https://newsela.com/" cardTitle="Newsela" altText="Newsela" target={externalTarget} />
+              <Cards cardImage={newselaImage} cardLink="https://newsela.com/" cardTitle="Newsela" altText="Newsela" cardColor={'#fff'} target={externalTarget} />
               <Cards cardImage={mobyMaxImage} cardLink="https://www.mobymax.com/" cardTitle="MobyMax" altText="MobyMax" target={externalTarget} />
               <Cards cardImage={ixlImage} cardLink="https://www.ixl.com/" cardTitle="IXL" altText="IXL" target={externalTarget} />              
             </div>

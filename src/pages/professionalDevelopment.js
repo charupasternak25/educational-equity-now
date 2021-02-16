@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import { isSafari, isIOS, isMobileSafari } from 'react-device-detect';
 import Navbar from '../components/Navbar';
 import SidebarNav from '../components/SidebarNav';
 import Footer from '../components/Footer';
 
-import professionalDevelopmentImage from '../images/MainPageImages/professionalDevelopment.png';
+import professionalDevelopmentImagePng from '../images/MainPageImages/professionalDevelopment.png';
+import professionalDevelopmentImageWebp from '../images/MainPageImages/professionalDevelopment.webp';
+
+const isSafariBrowser = isSafari || isIOS || isMobileSafari;
+
+const professionalDevelopmentImage = isSafariBrowser ? professionalDevelopmentImagePng : professionalDevelopmentImageWebp;
 
 class ProfessionalDevelopment extends Component {
   constructor(props) {
