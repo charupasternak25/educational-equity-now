@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { isSafari, isIOS, isMobileSafari } from 'react-device-detect';
 import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import SidebarNav from '../../components/SidebarNav';
@@ -6,7 +7,8 @@ import Footer from '../../components/Footer';
 import Cards from '../../components/Cards';
 
 import {
-  socialEmotionalSkillsMainImage,
+  socialEmotionalSkillsMainImagePng,
+  socialEmotionalSkillsMainImageWebp,
   centerventionImage,
   childMindInstituteImage,
   gratefulnessImage,
@@ -16,6 +18,9 @@ import {
   usableKnowledgeImage,
   veryWellFamilyImage
 } from '../../images/EducationalResources/SocialEmotionalSkills/index.js';
+
+const isSafariBrowser = isSafari || isIOS || isMobileSafari;
+const socialEmotionalSkillsMainImage = isSafariBrowser ? socialEmotionalSkillsMainImagePng : socialEmotionalSkillsMainImageWebp;
 
 const StyledConatiner = styled.div`
     padding-top: 20px;
