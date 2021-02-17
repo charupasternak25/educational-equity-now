@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Cards from './Cards';
 
 import englishImage from '../images/EducationalResources/English/english.jpg';
-import mathImagePng from '../images/EducationalResources/Math/math.png';
+import mathImagePng from '../images/EducationalResources/Math/mathSmall.png';
 import mathImageWebp from '../images/EducationalResources/Math/math.webp';
 import scienceImage from  '../images/EducationalResources/Science/science.jpg';
 import socialSkillsImagePng from  '../images/EducationalResources/SocialEmotionalSkills/socialSkills.png';

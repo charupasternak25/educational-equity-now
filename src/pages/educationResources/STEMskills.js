@@ -56,8 +56,8 @@ class ComputerSkills extends Component {
     const externalTarget = "_blank";
 
     return(
-        <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
-          <Navbar backgroundImage={stemSkillsMainImage} linkColor={'#1b1f22'} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="center" />
+        <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>               
+          <Navbar backgroundImage={stemSkillsMainImage} linkColor={'#1b1f22'} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="center" />          
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
           <StyledConatiner className="container">
             <div className="row">
