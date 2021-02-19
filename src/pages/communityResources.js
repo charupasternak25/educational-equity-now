@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { isSafari, isIOS, isMobileSafari } from 'react-device-detect';
 import Navbar from '../components/Navbar';
 import SidebarNav from '../components/SidebarNav';
+import ContentforCommunity from '../components/ContentforCommunity.js';
 import Footer from '../components/Footer';
 
 import communityResourcesImagePng from '../images/MainPageImages/communityResources.png';
@@ -46,6 +47,7 @@ class CommunityResources extends Component {
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
           <Navbar backgroundImage={communityResourcesImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="center" />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
+          <ContentforCommunity />
           <Footer />
         </div>
     );
