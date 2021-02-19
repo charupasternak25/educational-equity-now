@@ -19,6 +19,11 @@ import {
     historyMainImageWebp
  } from '../images/EducationalResources/History/index.js';
 
+ import { 
+    lifeSkillsImagePng,
+    lifeSkillsImageWebp
+ } from '../images/EducationalResources/LifeSkills/index.js';
+
 import vocationalSkillsImage from  '../images/vocational.jpeg';
 const isSafariBrowser = isSafari || isIOS || isMobileSafari;
 
@@ -27,6 +32,7 @@ const socialSkillsImage = isSafariBrowser ? socialSkillsImagePng : socialSkillsI
 const STEMSkillsImage = isSafariBrowser ? STEMSkillsImagePng : STEMSkillsImageWebp;
 const exerciseImage = isSafariBrowser ? exerciseImagePng : exerciseImageWebp;
 const historyImage = isSafariBrowser ? historyMainImagePng : historyMainImageWebp;
+const lifeSkillsImage = isSafariBrowser ? lifeSkillsImagePng : lifeSkillsImageWebp;
 
 const StyledConatiner = styled.div`
     padding-top: 20px;
@@ -37,6 +43,7 @@ class ContentforEducation extends Component {
         return(
             <StyledConatiner className="container">
                 <div className="row">
+                    <Cards cardImage={lifeSkillsImage} cardLink="/educationResources/lifeSkills" cardTitle="Life Skills" altText="Life Skills" />
                     <Cards cardImage={exerciseImage} cardLink="/educationResources/exercise" cardTitle="Exercise & Motor Skills" altText="Exercise & Motor Skills" />
                     <Cards cardImage={englishImage} cardLink="/educationResources/english" cardTitle="English Language Arts" altText="English Language image" />
                     <Cards cardImage={historyImage} cardLink="/educationResources/history" cardTitle="History" altText="History" />
