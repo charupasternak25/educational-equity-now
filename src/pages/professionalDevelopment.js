@@ -7,6 +7,8 @@ import Footer from '../components/Footer';
 import professionalDevelopmentImagePng from '../images/MainPageImages/professionalDevelopment.png';
 import professionalDevelopmentImageWebp from '../images/MainPageImages/professionalDevelopment.webp';
 
+import ContentforProfessionalDevelopment from '../components/ContentforProfessionalDevelopment.js';
+
 const isSafariBrowser = isSafari || isIOS || isMobileSafari;
 
 const professionalDevelopmentImage = isSafariBrowser ? professionalDevelopmentImagePng : professionalDevelopmentImageWebp;
@@ -47,6 +49,7 @@ class ProfessionalDevelopment extends Component {
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
           <Navbar backgroundImage={professionalDevelopmentImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="600px" imagePosition="center" />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
+          <ContentforProfessionalDevelopment />
           <Footer />
         </div>
     );

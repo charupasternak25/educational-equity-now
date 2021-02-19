@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 import { isSafari, isIOS, isMobileSafari } from 'react-device-detect';
-import Navbar from '../components/Navbar';
-import SidebarNav from '../components/SidebarNav';
-import ContentforEducation from '../components/ContentforEducation';
-import Footer from '../components/Footer';
-import educationalResourcesImagePng from '../images/MainPageImages/educationalResources.png';
-import educationalResourcesImageWebp from '../images/MainPageImages/educationalResources.webp';
+import styled from 'styled-components';
+import Navbar from '../../components/Navbar';
+import SidebarNav from '../../components/SidebarNav';
+import Footer from '../../components/Footer';
+import Cards from '../../components/Cards';
+
+import {
+    lifeSkillsImagePng,
+    lifeSkillsImageWebp
+} from '../../images/EducationalResources/LifeSkills/index.js';
 
 const isSafariBrowser = isSafari || isIOS || isMobileSafari;
+const lifeSkillsMainImage = isSafariBrowser ? lifeSkillsImagePng : lifeSkillsImageWebp;
 
-const educationalResourcesImage = isSafariBrowser ? educationalResourcesImagePng : educationalResourcesImageWebp;
+const StyledConatiner = styled.div`
+    padding-top: 20px;
+`;
 
-class EducationalResources extends Component {
+class LifeSkills extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -41,17 +48,21 @@ class EducationalResources extends Component {
 
   render() {
     const { children } = this.props;
-    const LinkColor = "#1b1f22";
+    const externalTarget = "_blank";
 
     return(
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
-          <Navbar backgroundImage={educationalResourcesImage} linkColor={LinkColor} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="center" />
+          <Navbar backgroundImage={lifeSkillsMainImage} linkColor={'#fff'} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="center" />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
-          <ContentforEducation />
+          <StyledConatiner className="container">
+            <div className="row">
+              
+            </div>
+          </StyledConatiner>
           <Footer />
         </div>
     );
   }
 }
 
-export default EducationalResources;
+export default LifeSkills;

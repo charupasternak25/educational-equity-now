@@ -20,6 +20,8 @@ import {
   n2yImage
 } from '../../images/EducationalResources/English/index.js';
 
+import { mrNussbaumImage } from '../../images/CommunityResources/index.js';
+
 const StyledConatiner = styled.div`
     padding-top: 20px;
 `;
@@ -74,6 +76,7 @@ class English extends Component {
               <Cards cardImage={ixlImage} cardLink="https://www.ixl.com/" cardTitle="IXL" altText="IXL" target={externalTarget} />
               <Cards cardImage={storyLineOnlineImage} cardLink="http://www.storylineonline.net" cardTitle="StoryLine Online" altText="StoryLine Online" target={externalTarget} />
               <Cards cardImage={n2yImage} cardLink="http://www.n2y.com" cardTitle="N2Y" altText="N2Y" target={externalTarget} />
+              <Cards cardImage={mrNussbaumImage} cardLink="https://mrnussbaum.com/" cardTitle="Mr. Nussbaum" altText="Mr. Nussbaum" />
             </div>
           </StyledConatiner>
           <Footer />
