@@ -76,7 +76,7 @@ class English extends Component {
               <Cards cardImage={ixlImage} cardLink="https://www.ixl.com/" cardTitle="IXL" altText="IXL" target={externalTarget} />
               <Cards cardImage={storyLineOnlineImage} cardLink="http://www.storylineonline.net" cardTitle="StoryLine Online" altText="StoryLine Online" target={externalTarget} />
               <Cards cardImage={n2yImage} cardLink="http://www.n2y.com" cardTitle="N2Y" altText="N2Y" target={externalTarget} />
-              <Cards cardImage={mrNussbaumImage} cardLink="https://mrnussbaum.com/" cardTitle="Mr. Nussbaum" altText="Mr. Nussbaum" />
+              <Cards cardImage={mrNussbaumImage} cardLink="https://mrnussbaum.com/" cardTitle="Mr. Nussbaum" altText="Mr. Nussbaum" cardColor="#fff" />
             </div>
           </StyledConatiner>
           <Footer />

@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import '../components/cards.scss';
 
-class Cards extends Component {
+class CardsWithDownload extends Component {
     render() {
         return(
             <div className="col s12 m6 l4">
                 <div className="card hoverable">
-                  <a className="link-styles" href={this.props.cardLink} target={this.props.target}>
-                    <div className="card-image center" style={{ backgroundColor: this.props.cardColor }}>
+                     
+                    <div className="card-image" style={{ backgroundColor: this.props.cardColor }}>
                       <img 
                         style={{
-                          height: '15rem', 
+                          height: '175px', 
                           paddingTop: this.props.paddingTop || 0, 
                           paddingBottom: this.props.paddingBottom || 0, 
                           width: this.props.width || '100%', 
@@ -20,18 +20,27 @@ class Cards extends Component {
                         alt={this.props.altText} 
                         responsive-img 
                         materialboxed
-                      />                    
+                      />
+                      <a 
+                        className="link-styles btn-floating halfway-fab waves-effect waves-light red" 
+                        href={this.props.cardLink} 
+                        target={this.props.target}
+                        rel="noopener noreferrer"
+                        download
+                    >
+                        <i className="material-icons">{this.props.icon}</i>
+                    </a>                     
                     </div>
                     <div className="card-content">
                       <span className="card-title white-text center">
                         {this.props.cardTitle}
                       </span>
-                    </div>
-                  </a>
+                      {this.props.cardContent ? <p className="center">{this.props.cardContent}</p> : <p></p>}
+                    </div>                  
                 </div>
               </div>
         );
     }
 }
 
-export default Cards;
+export default CardsWithDownload;
