@@ -63,7 +63,7 @@ class CustomLessons extends Component {
                     <div class="card">
                         <div class="card-image">
                             <img src={healthImage} />
-                            <a href="https://drive.google.com/file/d/1ChmDm6nvHgT5sBEgaEXdYcfcMX1Bg0fv/view?usp=sharing" target="_blank" rel="noopener noreferrer" download class="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">download</i></a>                            
+                            <a href="https://drive.google.com/drive/folders/1pwlzP9b1AYB9B3U54Fi5tTakOSgNO9DW" target="_blank" rel="noopener noreferrer" download class="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">download</i></a>                            
                         </div>
                         <div class="card-content">
                             <span className="card-title white-text center">Health & Hygeine</span>
