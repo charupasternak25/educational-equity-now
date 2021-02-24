@@ -5,4 +5,4 @@ export const docsTeachImage = require('./DocsTeachLogo.png');
 export const fordhamImage = require('./fordhamLogo.png');
 export const lifeLogoImage = require('./LIFE_logo.png');
 export const spartacusImage = require('./spartacusLogo.png');
-export const yaleLawSchoolImage = require('./yaleLawSchoolLogo.gif');
+export const yaleLawSchoolImage = require('./Yale-Law-School-logo.jpg');

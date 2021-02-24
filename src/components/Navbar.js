@@ -13,6 +13,8 @@ const StyledHeroImage = styled.header`
   background-position: ${props => props.imagePosition};  
   min-height: ${props => props.height};
   margin: 0 auto;
+  max-width: 100rem;
+  align-item: center;
 
   @media screen and (max-width: 670px) {
     min-height: 400px;
@@ -43,6 +45,11 @@ a {
   }
 }
 
+.width-alignment {
+  max-width: 100rem !important;
+  align-items: center;
+}
+
 `;
 
 const Navbar = (props) => {  
@@ -51,8 +58,8 @@ const Navbar = (props) => {
         <HelmetScripts />
         <LazyLoadComponent>
           <StyledHeroImage backgroundImage = {props.backgroundImage} height={props.height} linkColor={props.linkColor} imagePosition={props.imagePosition}>
-            <div className="navbar-fixed">
-              <nav className="nav-wrapper">
+            <div className="navbar-fixed width-alignment">
+              <nav className="nav-wrapper width-alignment">
                 <div class="container">
                 <div className="logo logoHide">
                   <a href="/" className="brand-logo">

@@ -59,7 +59,7 @@ class Exercise extends Component {
           <StyledConatiner className="container">
             <div className="row">
               <Cards cardImage={danceAbilityImage} cardLink="https://www.danceability.com/" cardTitle="Dance Ability" altText="Dance Ability" target={externalTarget} />
-              <Cards cardImage={goNoodleImage} cardLink="https://www.gonoodle.com" cardTitle="Go Noodle" altText="Go Noodle" target={externalTarget} />                          
+              <Cards cardImage={goNoodleImage} cardLink="https://www.gonoodle.com" cardTitle="Go Noodle" altText="Go Noodle" target={externalTarget} cardColor="#fff" />                          
             </div>
           </StyledConatiner>
           <Footer />

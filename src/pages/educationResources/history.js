@@ -67,10 +67,10 @@ class History extends Component {
           <StyledConatiner className="container">
             <div className="row">
               <Cards cardImage={nationalArchivesImage} cardLink="https://www.archives.gov/education/research/primary-sources" cardTitle="National Archives" altText="National Archives" target={externalTarget} />
-              <Cards cardImage={docsTeachImage} cardLink="https://www.docsteach.org/documents" cardTitle="Docs Teach" altText="Docs Teach" target={externalTarget} />
-              <Cards cardImage={fordhamImage} cardLink="https://sourcebooks.fordham.edu/mod/modsbookfull.asp" cardTitle="Fordham University" altText="Fordham University" target={externalTarget} />
+              <Cards cardImage={docsTeachImage} cardLink="https://www.docsteach.org/documents" cardTitle="Docs Teach" altText="Docs Teach" target={externalTarget} cardColor="#666" paddingTop={'5rem'} paddingBottom={'5rem'} />
+              <Cards cardImage={fordhamImage} cardLink="https://sourcebooks.fordham.edu/mod/modsbookfull.asp" cardTitle="Fordham University" altText="Fordham University" target={externalTarget} cardColor="#fff" paddingTop={'5rem'} paddingBottom={'5rem'} />
               <Cards cardImage={lifeLogoImage} cardLink="http://images.google.com/hosted/life" cardTitle="LIFE photos archive by Google" altText="LIFE photos archive by Google" target={externalTarget} />
-              <Cards cardImage={spartacusImage} cardLink="https://spartacus-educational.com/" cardTitle="Spartacus Educational" altText="Spartacus Educational" target={externalTarget} />
+              <Cards cardImage={spartacusImage} cardLink="https://spartacus-educational.com/" cardTitle="Spartacus Educational" altText="Spartacus Educational" target={externalTarget} cardColor="#fff" paddingTop={'5rem'} paddingBottom={'5rem'} />
               <Cards cardImage={yaleLawSchoolImage} cardLink="https://avalon.law.yale.edu/" cardTitle="Avalon project by Yale Law School" altText="Avalon project by Yale Law School" target={externalTarget} />
               <Cards cardImage={historyClassPodcastImage} cardLink="https://podcasts.apple.com/us/podcast/stuff-you-missed-in-history-class/id283605519" cardTitle="History class podcast" altText="History class podcast" target={externalTarget} />
             </div>

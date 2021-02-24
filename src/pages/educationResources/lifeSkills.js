@@ -62,7 +62,7 @@ class LifeSkills extends Component {
             <div className="row">
               <Cards cardImage={EmpowerSmallImage} cardLink="/educationResources/customLessons" cardTitle="Lessons by Niels Pasternak" altText="Lessons by Niels Pasternak" target={externalTarget} cardColor="#fff" />
               <Cards cardImage={transitionImage} cardLink="https://sites.google.com/mesd.k12.or.us/oregontransitioneducation/independent-living?authuser=0" cardTitle="Oregon transition education" altText="Oregon transition education" target={externalTarget} />
-              <Cards cardImage={conoverImage} cardLink="http://www.conoverlifeskills.com/" cardTitle="Conover Resources" altText="Conover Resources" target={externalTarget} />
+              <Cards cardImage={conoverImage} cardLink="http://www.conoverlifeskills.com/" cardTitle="Conover Resources" altText="Conover Resources" target={externalTarget} cardColor="#fff" paddingTop={'2rem'} paddingBottom={'2rem'} />
             </div>
           </StyledConatiner>
           <Footer />

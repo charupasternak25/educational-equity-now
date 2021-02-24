@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import { isSafari, isIOS, isMobileSafari } from 'react-device-detect';
-
 import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import SidebarNav from '../../components/SidebarNav';
 import Footer from '../../components/Footer';
+import CardsWithDownload from '../../components/CardsWithDownload';
 import Cards from '../../components/Cards';
 
 import {
     empowerBannerImagePng,
     empowerBannerImageWebp,
-    healthImage
+    healthImage,
+    positiveLifeSkillsImage,
+    walking1Image,
+    walking2Image,
+    walking3Image,
+    ridingBus1Image,
+    ridingBus2Image,
+    ridingBus3Image    
 } from '../../images/EducationalResources/LifeSkills/index.js';
-
 
 const isSafariBrowser = isSafari || isIOS || isMobileSafari;
 const customLessonsMainImage = isSafariBrowser ? empowerBannerImagePng : empowerBannerImageWebp;
@@ -59,22 +65,34 @@ class CustomLessons extends Component {
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
           <StyledConatiner className="container">
             <div class="row">
-                <div class="col s12 m6 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src={healthImage} />
-                            <a href="https://drive.google.com/drive/folders/1pwlzP9b1AYB9B3U54Fi5tTakOSgNO9DW" target="_blank" rel="noopener noreferrer" download class="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">download</i></a>                            
-                        </div>
-                        <div class="card-content">
-                            <span className="card-title white-text center">Health & Hygeine</span>
-                            <p className="center">Health and hygeine resources. Please click the download button to use the resources.</p>                            
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-            <div>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQtis_uAOS-kFNbwYKkg7sH19jhKrUe40eYt3LYHa3PWj3o2cHfMqiTgfkZrbIARAb-PzG0tGFpqqr/embed?start=true&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>    
-            </div>            
+            <CardsWithDownload 
+              cardImage={healthImage} 
+              cardLink="https://drive.google.com/drive/folders/1pwlzP9b1AYB9B3U54Fi5tTakOSgNO9DW" 
+              cardTitle="Health & Hygeine" 
+              altText="Health & Hygeine" 
+              target={externalTarget}              
+              icon="download"
+            />
+
+            <CardsWithDownload 
+              cardImage={positiveLifeSkillsImage} 
+              cardLink="https://drive.google.com/drive/folders/1x3rIZnib7_O0TjgTVYBxuePQb9UUrTG7" 
+              cardTitle="Positive life skills" 
+              altText="Positive life skills" 
+              target={externalTarget}              
+              icon="download"
+            />
+
+            <CardsWithDownload cardImage={walking1Image} cardLink="https://www.youtube.com/watch?v=2H1iEAk-9Rg" cardTitle="Walking Safely Near Traffic" altText="Walking Safely Near Traffic" target={externalTarget} icon="video_library" />
+            <CardsWithDownload cardImage={walking2Image} cardLink="https://www.youtube.com/watch?v=_jCpBH5zehI" cardTitle="Crossing Streets Safely" altText="Crossing Streets Safely" target={externalTarget} icon="video_library" />
+            <CardsWithDownload cardImage={walking3Image} cardLink="https://www.youtube.com/watch?v=bQVcdaW2TuY" cardTitle="Crossing Intersections Safely" altText="Crossing Intersections Safely" target={externalTarget} icon="video_library" />
+            
+            <CardsWithDownload cardImage={ridingBus1Image} cardLink="https://www.youtube.com/watch?v=YiI8bnDwkcE" cardTitle="How to Ride the Bus" altText="How to Ride the Bus" target={externalTarget} icon="video_library" />
+            <CardsWithDownload cardImage={ridingBus2Image} cardLink="https://www.youtube.com/watch?v=2mxUr_Tp2Rg" cardTitle="National Fragile X Foundation" altText="National Fragile X Foundation" target={externalTarget} icon="video_library" />
+            <CardsWithDownload cardImage={ridingBus3Image} cardLink="https://www.youtube.com/watch?v=-gSkwbXbWdU" cardTitle="How to Ride the City Bus" altText="How to Ride the City Bus" target={externalTarget} icon="video_library" />
+
+
+            </div>                      
           </StyledConatiner>
           <Footer />
         </div>
