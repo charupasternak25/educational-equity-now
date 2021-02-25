@@ -3,13 +3,16 @@ import styled from 'styled-components';
 
 const StyledConatiner = styled.div`
     padding-top: 5rem;
+    .padding-5 {
+        padding: 5rem 2rem 1rem 2rem;
+    }
 `;
 
 class ContactUsForm extends Component {
     render() {
         return(
             <StyledConatiner className="container">
-                <div className="row card">
+                <div className="row card padding-5">
                     <form name="contact-us" method="POST" data-netlify="true" className="col s12">
                         <div className="row">
                             <div className="input-field col s6">
@@ -37,8 +40,14 @@ class ContactUsForm extends Component {
                             <div className="input-field col s12">
                                 <textarea id="message" className="materialize-textarea" />
                                 <label for="message">Message</label>
-                            </div>
-                            
+                            </div>                            
+                        </div>
+                        <div className="row">
+                            <div className="input-field col s12 center">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                            </div>                            
                         </div>
                     </form>
                 </div>
