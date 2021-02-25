@@ -10,14 +10,7 @@ import Cards from '../../components/Cards';
 import {
     empowerBannerImagePng,
     empowerBannerImageWebp,
-    healthImage,
-    positiveLifeSkillsImage,
-    walking1Image,
-    walking2Image,
-    walking3Image,
-    ridingBus1Image,
-    ridingBus2Image,
-    ridingBus3Image    
+    positiveLifeSkillsImage,    
 } from '../../images/EducationalResources/LifeSkills/index.js';
 
 const isSafariBrowser = isSafari || isIOS || isMobileSafari;
@@ -64,16 +57,7 @@ class CustomLessons extends Component {
           <Navbar backgroundImage={customLessonsMainImage} linkColor={'#fff'} onToggleMenu={this.handleToggleMenu} height="500px" imagePosition="bottom" />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
           <StyledConatiner className="container">
-            <div class="row">
-            <CardsWithDownload 
-              cardImage={healthImage} 
-              cardLink="https://drive.google.com/drive/folders/1pwlzP9b1AYB9B3U54Fi5tTakOSgNO9DW" 
-              cardTitle="Health & Hygeine" 
-              altText="Health & Hygeine" 
-              target={externalTarget}              
-              icon="download"
-            />
-
+            <div class="row">            
             <CardsWithDownload 
               cardImage={positiveLifeSkillsImage} 
               cardLink="https://drive.google.com/drive/folders/1x3rIZnib7_O0TjgTVYBxuePQb9UUrTG7" 
@@ -81,17 +65,7 @@ class CustomLessons extends Component {
               altText="Positive life skills" 
               target={externalTarget}              
               icon="download"
-            />
-
-            <CardsWithDownload cardImage={walking1Image} cardLink="https://www.youtube.com/watch?v=2H1iEAk-9Rg" cardTitle="Walking Safely Near Traffic" altText="Walking Safely Near Traffic" target={externalTarget} icon="video_library" />
-            <CardsWithDownload cardImage={walking2Image} cardLink="https://www.youtube.com/watch?v=_jCpBH5zehI" cardTitle="Crossing Streets Safely" altText="Crossing Streets Safely" target={externalTarget} icon="video_library" />
-            <CardsWithDownload cardImage={walking3Image} cardLink="https://www.youtube.com/watch?v=bQVcdaW2TuY" cardTitle="Crossing Intersections Safely" altText="Crossing Intersections Safely" target={externalTarget} icon="video_library" />
-            
-            <CardsWithDownload cardImage={ridingBus1Image} cardLink="https://www.youtube.com/watch?v=YiI8bnDwkcE" cardTitle="How to Ride the Bus" altText="How to Ride the Bus" target={externalTarget} icon="video_library" />
-            <CardsWithDownload cardImage={ridingBus2Image} cardLink="https://www.youtube.com/watch?v=2mxUr_Tp2Rg" cardTitle="National Fragile X Foundation" altText="National Fragile X Foundation" target={externalTarget} icon="video_library" />
-            <CardsWithDownload cardImage={ridingBus3Image} cardLink="https://www.youtube.com/watch?v=-gSkwbXbWdU" cardTitle="How to Ride the City Bus" altText="How to Ride the City Bus" target={externalTarget} icon="video_library" />
-
-
+            />            
             </div>                      
           </StyledConatiner>
           <Footer />
