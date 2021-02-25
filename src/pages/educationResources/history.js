@@ -21,6 +21,8 @@ import {
     historyClassPodcastImage
 } from '../../images/EducationalResources/SocialStudies/index.js';
 
+import { mrNussbaumImage } from '../../images/CommunityResources/index.js';
+
 const isSafariBrowser = isSafari || isIOS || isMobileSafari;
 const historyMainImage = isSafariBrowser ? historyMainImagePng : historyMainImageWebp;
 
@@ -73,6 +75,7 @@ class History extends Component {
               <Cards cardImage={spartacusImage} cardLink="https://spartacus-educational.com/" cardTitle="Spartacus Educational" altText="Spartacus Educational" target={externalTarget} cardColor="#fff" paddingTop={'5rem'} paddingBottom={'5rem'} />
               <Cards cardImage={yaleLawSchoolImage} cardLink="https://avalon.law.yale.edu/" cardTitle="Avalon project by Yale Law School" altText="Avalon project by Yale Law School" target={externalTarget} />
               <Cards cardImage={historyClassPodcastImage} cardLink="https://podcasts.apple.com/us/podcast/stuff-you-missed-in-history-class/id283605519" cardTitle="History class podcast" altText="History class podcast" target={externalTarget} />
+              <Cards cardImage={mrNussbaumImage} cardLink="https://mrnussbaum.com/" cardTitle="Mr. Nussbaum" altText="Mr. Nussbaum" cardColor="#fff" />
             </div>
           </StyledConatiner>
           <Footer />

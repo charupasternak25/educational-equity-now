@@ -14,6 +14,8 @@ import {
   ixlImage
 } from '../../images/EducationalResources/English/index.js';
 
+import { mrNussbaumImage } from '../../images/CommunityResources/index.js';
+
 const StyledConatiner = styled.div`
     padding-top: 20px;
 `;
@@ -59,6 +61,7 @@ class Science extends Component {
               <Cards cardImage={showAboutScienceImage} cardLink="https://theshowaboutscience.com/" cardTitle="The show about Science" altText="The show about Science" target={externalTarget} />
               <Cards cardImage={mysteryScienceImage} cardLink="https://mysteryscience.com/" cardTitle="Mystery Science" altText="Mystery Science" cardColor={'#fff'} target={externalTarget} paddingTop={'5rem'} paddingBottom={'5rem'} />
               <Cards cardImage={ixlImage} cardLink="https://www.ixl.com/" cardTitle="IXL" altText="IXL" target={externalTarget} />
+              <Cards cardImage={mrNussbaumImage} cardLink="https://mrnussbaum.com/" cardTitle="Mr. Nussbaum" altText="Mr. Nussbaum" cardColor="#fff" />
             </div>
           </StyledConatiner>
           <Footer />
