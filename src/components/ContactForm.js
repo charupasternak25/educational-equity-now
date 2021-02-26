@@ -45,7 +45,8 @@ class ContactForm extends Component {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact-us", ...this.state })
         })
-        .then(() => {            
+        .then(() => {
+                console.log('Submitted');            
                 window.location.href = 'https://educationalequitynow.com/';
             }
         )
@@ -60,13 +61,7 @@ class ContactForm extends Component {
     render() {        
         const { firstname, lastname, email, phone, message } = this.state;        
         return (
-            <StyledConatiner className="container">
-                {/* {this.state.setViewToThankYou ?                 
-                    <div className="row card padding center">
-                        <StyledThankYouHeader>Thank you for contacting us!</StyledThankYouHeader>                    
-                        <StyledThankYouDescription>We will get back to you within 24 business hours. <br />Until then, <a href="/">Keep learning!!</a></StyledThankYouDescription>
-                    </div>
-                :  */}
+            <StyledConatiner className="container">                
                 <div className="row card padding-5">
                     <form data-netlify="true" data-netlify-honeypot="bot-field" className="col s12" onSubmit={this.handleSubmit}>
                     <input type="hidden" name="form-name" value="contact-us" />
