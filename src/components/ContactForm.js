@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const encode = (data) => {    
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");        
-    }
+// const encode = (data) => {    
+//     return Object.keys(data)
+//         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//         .join("&");        
+//     }
 
 const StyledConatiner = styled.div`
     padding-top: 5rem;
@@ -44,7 +44,7 @@ class ContactForm extends Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact-us", ...this.state })
+            body: { "form-name": "contact-us", ...this.state }
         })
         .then(() => {            
                 this.setState({ setViewToThankYou: true})
