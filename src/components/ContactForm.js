@@ -2,10 +2,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const encode = (data) => {
+const encode = (data) => {    
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
+        .join("&");        
     }
 
 const StyledConatiner = styled.div`
@@ -48,8 +48,8 @@ class ContactForm extends Component {
             body: encode({ "form-name": "contact-us", ...this.state })
         })
         .then(() => {            
-            this.setState({ setViewToThankYou: true})
-        }
+                this.setState({ setViewToThankYou: true})
+            }
         )
         .catch(error => alert(error));
         e.preventDefault();
@@ -75,29 +75,29 @@ class ContactForm extends Component {
                         <div className="row">
                             <div className="input-field col s6">
                                 <input name="firstname" value={firstname} id="firstname" type="text" className="validate" onChange={this.handleChange} />
-                                <label for="firstname">First name</label>
+                                <label htmlFor="firstname">First name</label>
                             </div>
                             <div className="input-field col s6">
                                 <input name="lastname" value={lastname} id="lastname" type="text" className="validate" onChange={this.handleChange} />
-                                <label for="lastname">Last name</label>
+                                <label htmlFor="lastname">Last name</label>
                             </div>
                         </div>
 
                         <div className="row">
                             <div className="input-field col s6">
                                 <input name="email" value={email} id="email" type="email" className="validate" onChange={this.handleChange} />
-                                <label for="email" data-error="wrong" data-success="right">Email</label>
+                                <label htmlFor="email" data-error="wrong" data-success="right">Email</label>
                             </div>
                             <div className="input-field col s6">
                                 <input name="phone" value={phone} id="phone" type="tel" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" className="validate" onChange={this.handleChange} />
-                                <label for="phone">Phone</label>
+                                <label htmlFor="phone">Phone</label>
                             </div>
                         </div>
 
                         <div className="row">
                             <div className="input-field col s12">
                                 <textarea name="message" value={message} id="message" className="materialize-textarea" onChange={this.handleChange} />
-                                <label for="message">Message</label>
+                                <label htmlFor="message">Message</label>
                             </div>                            
                         </div>
 
