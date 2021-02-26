@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SkinnyNavbar from '../components/SkinnyNavbar';
 import SidebarNav from '../components/SidebarNav';
 import Footer from '../components/Footer';
-import Form from '../components/Form';
+import ContactForm from '../components/ContactForm';
 
 class ContactUs extends Component {
   constructor(props) {
@@ -35,10 +35,16 @@ class ContactUs extends Component {
   render() {
     
     return(
-        <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>          
+        <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
+          
+          {/* <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <textarea name="message"></textarea>
+          </form>           */}
           <SkinnyNavbar onToggleMenu={this.handleToggleMenu} />
           <SidebarNav onToggleMenu={this.handleToggleMenu} />          
-          <Form />
+          <ContactForm />
           <Footer />
         </div>
     );
