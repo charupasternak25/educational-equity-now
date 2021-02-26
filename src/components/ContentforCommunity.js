@@ -6,7 +6,10 @@ import {
     cognotopiaImage,
     mrNussbaumImage,
     northStarImage,
-    seMattersImage
+    seMattersImage,
+    arcOfLaneCountyImage,
+    familiesConnectedImage,
+    OCDDImage
 } from '../images/CommunityResources/index.js';
 
 import transitionImage from '../images/Transition.jpg';
@@ -20,6 +23,9 @@ class ContentforCommunity extends Component {
         return(
             <StyledConatiner className="container">
                 <div className="row">
+                    <Cards cardImage={arcOfLaneCountyImage} cardLink="https://arclane.org/" cardTitle="The Arc Lane County" altText="The Arc Lane County" />
+                    <Cards cardImage={familiesConnectedImage} cardLink="https://arclane.org/youthservices/families-connected/" cardTitle="Families Connected" altText="Families Connected" cardColor={'#fff'} />
+                    <Cards cardImage={OCDDImage} cardLink="https://www.ocdd.org/families-supporting-families/" cardTitle="Family Networks" altText="Family Networks" cardColor={'#fff'} paddingTop={'2rem'} paddingBottom={'2rem'} />
                     <Cards cardImage={ableFindImage} cardLink="https://www.ablefind.org/" cardTitle="Able Find" altText="Able Find" cardColor={'#666'} paddingTop={'5rem'} paddingBottom={'5rem'} />
                     <Cards cardImage={cognotopiaImage} cardLink="https://www.cognitopia.com/apps/MyLife/viewPortfolioShare/Gvep6hDyRHQPPQK_3GEY5599iOie_HqwZ6k_GHFxRSO/portfolio" cardTitle="Cognotopia" altText="Cognotopia" cardColor={'#fff'} paddingTop={'5rem'} paddingBottom={'5rem'}  />
                     <Cards cardImage={mrNussbaumImage} cardLink="https://mrnussbaum.com/" cardTitle="Mr. Nussbaum" altText="Mr. Nussbaum" cardColor={'#fff'} />

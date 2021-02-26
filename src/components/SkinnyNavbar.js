@@ -20,8 +20,6 @@ const StyledHeroImage = styled.header`
     min-height: 400px;
   }
 
-  
-
   .linkColor {
     color: #fff;
     font-weight: 600;
