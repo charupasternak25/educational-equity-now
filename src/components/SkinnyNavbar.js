@@ -94,14 +94,14 @@ const SkinnyNavbar = (props) => {
           
             <div className="navbar-fixed width-alignment">
               <nav className="nav-wrapper width-alignment">
-                <div class="container">
+                <div className="container">
                 <div className="logo logoHide">
                   <a href="/" className="brand-logo">
                     <span className="icon fa-graduation-cap"></span>&nbsp;&nbsp;EEN
                   </a>
                   </div>
-                  <a className="menu-link hide-on-med-and-up" onClick={props.onToggleMenu} href="javascript:;"><i class="material-icons">menu</i></a>              
-                  <ul class="right hide-on-small-only">
+                  <a className="menu-link hide-on-med-and-up" onClick={props.onToggleMenu} href="javascript:;"><i className="material-icons">menu</i></a>              
+                  <ul className="right hide-on-small-only">
                     <li><Link to="/educationalResources" className="linkColor">Educational Resources</Link></li>
                     <li><Link to="/communityResources" className="linkColor">Community Resources</Link></li>
                     <li><Link to="/professionalDevelopment" className="linkColor">Professional Development</Link></li>

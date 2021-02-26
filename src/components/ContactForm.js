@@ -44,7 +44,7 @@ class ContactForm extends Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact-us", ...this.state })
+            body: { "form-name": "contact-us", ...this.state }
         })
         .then(() => {            
                 this.setState({ setViewToThankYou: true})
