@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const encode = (data) => {    
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");        
-    }
+// const encode = (data) => {    
+//     return Object.keys(data)
+//         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//         .join("&");        
+//     }
 
 const StyledConatiner = styled.div`
     padding-top: 5rem;
