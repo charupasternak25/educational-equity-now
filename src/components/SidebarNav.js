@@ -9,7 +9,7 @@ const SidebarNav = (props) => (
                 <li><Link onClick={props.onToggleMenu} to="/educationalResources">Educational Resources</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/communityResources">Community Resources</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/professionalDevelopment">Professional Development</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/contact">Contact</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/contactUs">Contact</Link></li>
             </ul>            
         </div>
         <a className="close" onClick={props.onToggleMenu} href="javascript:;">Close</a>
