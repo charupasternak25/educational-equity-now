@@ -36,14 +36,8 @@ class ContactUs extends Component {
     
     return(
         <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
-          
-          {/* <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-          </form>           */}
           <SkinnyNavbar onToggleMenu={this.handleToggleMenu} />
-          <SidebarNav onToggleMenu={this.handleToggleMenu} />          
+          <SidebarNav onToggleMenu={this.handleToggleMenu} />
           <ContactForm />
           <Footer />
         </div>
