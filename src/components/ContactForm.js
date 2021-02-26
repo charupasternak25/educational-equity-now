@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-// const encode = (data) => {    
-//     return Object.keys(data)
-//         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-//         .join("&");        
-//     }
+const encode = (data) => {    
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");        
+    }
 
 const StyledConatiner = styled.div`
     padding-top: 5rem;
@@ -35,8 +35,7 @@ class ContactForm extends Component {
             lastname: "",
             email: "",
             phone: "",
-            message: "",
-            setViewToThankYou: false 
+            message: ""            
         };
     }
 
@@ -44,10 +43,10 @@ class ContactForm extends Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: { "form-name": "contact-us", ...this.state }
+            body: encode({ "form-name": "contact-us", ...this.state })
         })
         .then(() => {            
-                this.setState({ setViewToThankYou: true})
+                window.location.href = 'https://educationalequitynow.com/';
             }
         )
         .catch(error => alert(error));
@@ -62,12 +61,12 @@ class ContactForm extends Component {
         const { firstname, lastname, email, phone, message } = this.state;        
         return (
             <StyledConatiner className="container">
-                {this.state.setViewToThankYou ?                 
+                {/* {this.state.setViewToThankYou ?                 
                     <div className="row card padding center">
                         <StyledThankYouHeader>Thank you for contacting us!</StyledThankYouHeader>                    
                         <StyledThankYouDescription>We will get back to you within 24 business hours. <br />Until then, <a href="/">Keep learning!!</a></StyledThankYouDescription>
                     </div>
-                : 
+                :  */}
                 <div className="row card padding-5">
                     <form data-netlify="true" data-netlify-honeypot="bot-field" className="col s12" onSubmit={this.handleSubmit}>
                     <input type="hidden" name="form-name" value="contact-us" />
@@ -109,7 +108,7 @@ class ContactForm extends Component {
                         </div>
                     </form>
                 </div>   
-                }            
+                {/* }             */}
             </StyledConatiner>
         );
     }
