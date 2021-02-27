@@ -43,7 +43,7 @@ class ContactForm extends Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
+            body: encode({ "form-name": "contact-us", ...this.state })
         })
         .then(() => {
                 console.log('Submitted');            
@@ -64,7 +64,7 @@ class ContactForm extends Component {
             <StyledConatiner className="container">                
                 <div className="row card padding-5">
                     <form data-netlify="true" data-netlify-honeypot="bot-field" className="col s12" onSubmit={this.handleSubmit}>
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="form-name" value="contact-us" />
                         <div className="row">
                             <div className="input-field col s6">
                                 <input name="firstname" value={firstname} id="firstname" type="text" className="validate" onChange={this.handleChange} />
