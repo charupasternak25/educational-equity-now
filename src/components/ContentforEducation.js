@@ -24,7 +24,10 @@ import {
     lifeSkillsImageWebp
  } from '../images/EducationalResources/LifeSkills/index.js';
 
-import vocationalSkillsImage from  '../images/vocational.jpeg';
+import { 
+    vocationalSkillsImage
+ } from '../images/EducationalResources/VocationalSkills/index.js';
+ 
 const isSafariBrowser = isSafari || isIOS || isMobileSafari;
 
 const mathImage = isSafariBrowser ? mathImagePng : mathImageWebp;

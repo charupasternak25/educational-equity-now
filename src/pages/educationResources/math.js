@@ -10,7 +10,8 @@ import {
   mathMainImagePng,
   mathMainImageWebp,
   khanAcademyImage,
-  toyTheaterImage
+  toyTheaterImage,
+  oppiaImage
 } from '../../images/EducationalResources/Math/index.js';
 
 import {
@@ -66,6 +67,7 @@ class Math extends Component {
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
           <StyledConatiner className="container">
             <div className="row">
+              <Cards cardImage={oppiaImage} cardLink="https://www.oppia.org/learn/math" cardTitle="The Oppia Classroom" altText="The Oppia Classroom" target={externalTarget} />
               <Cards cardImage={khanAcademyImage} cardLink="https://www.khanacademy.org/" cardTitle="Khan Academy" altText="Khan Academy" target={externalTarget} />
               <Cards cardImage={toyTheaterImage} cardLink="https://toytheater.com/" cardTitle="Toy Theater" altText="Toy Theater" target={externalTarget} />
               <Cards cardImage={mobyMaxImage} cardLink="https://www.mobymax.com/" cardTitle="MobyMax" altText="MobyMax" target={externalTarget} />

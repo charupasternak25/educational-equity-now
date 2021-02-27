@@ -11,7 +11,9 @@ import {
   stemSkillsMainImageWebp,
   hourofCodeImage,
   interlandImage,
-  tynkerImage
+  tynkerImage,
+  csFirstLogo,
+  microsoftLogo
 } from '../../images/EducationalResources/Computer/index.js';
 
 import { khanAcademyImage } from '../../images/EducationalResources/Math/index.js';
@@ -63,6 +65,8 @@ class ComputerSkills extends Component {
             <div className="row">
               <Cards cardImage={interlandImage} cardLink="https://beinternetawesome.withgoogle.com/en_us/interland" cardTitle="Interland by Google" altText="Interland by Google" target={externalTarget} />
               <Cards cardImage={hourofCodeImage} cardLink="https://hourofcode.com/us" cardTitle="Hour of code" altText="Hour of code" target={externalTarget} />
+              <Cards cardImage={csFirstLogo} cardLink="https://csfirst.withgoogle.com/s/en/home" cardTitle="CS First | Google" altText="CS First | Google" target={externalTarget} />
+              <Cards cardImage={microsoftLogo} cardLink="https://www.microsoft.com/en-us/makecode" cardTitle="Make Code | Microsoft" altText="Make Code | Microsoft" target={externalTarget} />
               <Cards cardImage={tynkerImage} cardLink="https://www.tynker.com/" cardTitle="Tynker" altText="Tynker" target={externalTarget} />
               <Cards cardImage={khanAcademyImage} cardLink="https://www.khanacademy.org/hourofcode" cardTitle="Khan Academy" altText="Khan Academy" target={externalTarget} />
             </div>

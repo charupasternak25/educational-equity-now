@@ -8,12 +8,7 @@ const Header = () => (
       <div className="inner">
         <h1>Educational Equity NOW</h1>
         <p>
-          Educational Equity Now is a website that is designed to support students 
-          and especially those who experience exceptionalities, educators, parents, and 
-          other allies. This website offers support by providing links to a variety of 
-          educational resources, community resources, professional development resources 
-          for educators and parents, and a forum for asking questions related to education 
-          and supporting others.
+          EDUCATIONAL EQUITY NOW IS DESIGNED TO SUPPORT STUDENTS, EDUCATORS, PARENTS, AND OTHER ALLIES. WE OFFER SUPPORT BY PROVIDING LINKS TO A VARIETY OF EDUCATIONAL, COMMUNITY, & PROFESSIONAL DEVELOPMENT RESOURCES FOR STUDENTS, EDUCATORS, AND PARENTS, AND A FORUM FOR EDUCATIONAL COLLABORATION  AND PROMOTING EQUITY. 
         </p>
       </div>
     </div>
