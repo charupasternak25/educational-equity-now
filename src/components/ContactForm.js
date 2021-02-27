@@ -63,7 +63,7 @@ class ContactForm extends Component {
         return (
             <StyledConatiner className="container">                
                 <div className="row card padding-5">
-                    <form data-netlify="true" data-netlify-honeypot="bot-field" className="col s12" onSubmit={this.handleSubmit}>
+                    <form className="col s12" onSubmit={this.handleSubmit}>
                     <input type="hidden" name="form-name" value="contact-us" />
                         <div className="row">
                             <div className="input-field col s6">
