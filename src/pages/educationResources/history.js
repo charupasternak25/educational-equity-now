@@ -14,7 +14,9 @@ import {
     fordhamImage,
     lifeLogoImage,
     spartacusImage,
-    yaleLawSchoolImage
+    yaleLawSchoolImage,
+    revisionistImage,
+    encyclopediaImage
 } from '../../images/EducationalResources/History/index.js';
 
 import {
@@ -68,6 +70,8 @@ class History extends Component {
           <SidebarNav onToggleMenu={this.handleToggleMenu} />
           <StyledConatiner className="container">
             <div className="row">
+              <Cards cardImage={revisionistImage} cardLink="https://podcasts.apple.com/us/podcast/revisionist-history/id1119389968" cardTitle="Revisionist History" altText="Revisionist History" target={externalTarget} />
+              <Cards cardImage={encyclopediaImage} cardLink="https://podcasts.apple.com/us/podcast/encyclopedia-womannica/id1464524725" cardTitle="Encyclopedia Womannica" altText="Encyclopedia Womannica" target={externalTarget} />
               <Cards cardImage={nationalArchivesImage} cardLink="https://www.archives.gov/education/research/primary-sources" cardTitle="National Archives" altText="National Archives" target={externalTarget} />
               <Cards cardImage={docsTeachImage} cardLink="https://www.docsteach.org/documents" cardTitle="Docs Teach" altText="Docs Teach" target={externalTarget} cardColor="#666" paddingTop={'5rem'} paddingBottom={'5rem'} />
               <Cards cardImage={fordhamImage} cardLink="https://sourcebooks.fordham.edu/mod/modsbookfull.asp" cardTitle="Fordham University" altText="Fordham University" target={externalTarget} cardColor="#fff" paddingTop={'5rem'} paddingBottom={'5rem'} />

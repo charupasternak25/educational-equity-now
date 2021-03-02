@@ -7,7 +7,8 @@ import Cards from '../../components/Cards';
 import {
   scienceMainImage,
   mysteryScienceImage,
-  showAboutScienceImage
+  showAboutScienceImage,
+  climateCastImage
 } from '../../images/EducationalResources/Science/index.js';
 
 import {
@@ -62,6 +63,7 @@ class Science extends Component {
               <Cards cardImage={mysteryScienceImage} cardLink="https://mysteryscience.com/" cardTitle="Mystery Science" altText="Mystery Science" cardColor={'#fff'} target={externalTarget} paddingTop={'5rem'} paddingBottom={'5rem'} />
               <Cards cardImage={ixlImage} cardLink="https://www.ixl.com/" cardTitle="IXL" altText="IXL" target={externalTarget} />
               <Cards cardImage={mrNussbaumImage} cardLink="https://mrnussbaum.com/" cardTitle="Mr. Nussbaum" altText="Mr. Nussbaum" cardColor="#fff" />
+              <Cards cardImage={climateCastImage} cardLink="https://podcasts.apple.com/us/podcast/climate-cast/id628455920" cardTitle="Climate Cast" altText="Climate Cast" />
             </div>
           </StyledConatiner>
           <Footer />
