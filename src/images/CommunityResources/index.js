@@ -6,3 +6,4 @@ export const seMattersImage = require('./se-matters-logo.jpg');
 export const arcOfLaneCountyImage = require('./Arc-Lane-logo.jpg');
 export const familiesConnectedImage = require('./FamConnected-color.png');
 export const OCDDImage = require('./OCDD-Logo.png');
+export const spentTheRentImage = require('./spent-the-rent.jpg')

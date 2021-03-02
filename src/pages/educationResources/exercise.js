@@ -10,7 +10,8 @@ import {
   exerciseMainImagePng,
   exerciseMainImageWebp,
   danceAbilityImage,
-  goNoodleImage
+  goNoodleImage,
+  jensoryLogoImage
 } from '../../images/EducationalResources/Exercise/index.js';
 
 const isSafariBrowser = isSafari || isIOS || isMobileSafari;
@@ -59,7 +60,8 @@ class Exercise extends Component {
           <StyledConatiner className="container">
             <div className="row">
               <Cards cardImage={danceAbilityImage} cardLink="https://www.danceability.com/" cardTitle="Dance Ability" altText="Dance Ability" target={externalTarget} />
-              <Cards cardImage={goNoodleImage} cardLink="https://www.gonoodle.com" cardTitle="Go Noodle" altText="Go Noodle" target={externalTarget} cardColor="#fff" />                          
+              <Cards cardImage={goNoodleImage} cardLink="https://www.gonoodle.com" cardTitle="Go Noodle" altText="Go Noodle" target={externalTarget} cardColor="#fff" />
+              <Cards cardImage={jensoryLogoImage} cardLink="https://www.youtube.com/channel/UCvzmFMTrgauEaERHI8p6PMw/featured" cardTitle="Jensory " altText="Jensory" target={externalTarget} cardColor="#fff" />                          
             </div>
           </StyledConatiner>
           <Footer />
