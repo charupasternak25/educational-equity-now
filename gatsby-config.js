@@ -18,12 +18,13 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-google-gtag`,
-      trackingIds: [
-        "G-11WLVD2096"
-      ],
+      options: {
+        trackingIds: [
+          "G-11WLVD2096",
+        ],
+      },
     },
     'gatsby-plugin-sass',
     `gatsby-plugin-material-ui`
-  ],
-  
+  ],  
 }
