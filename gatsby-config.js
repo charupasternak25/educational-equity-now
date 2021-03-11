@@ -8,9 +8,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,      
-      options: {
-        // name: 'gatsby-starter-default',
-        // short_name: 'starter',
+      options: {        
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
@@ -18,8 +16,15 @@ module.exports = {
         icon: 'src/images/een-icon.webp', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-11WLVD2096",
+        ],
+      },
+    },
     'gatsby-plugin-sass',
     `gatsby-plugin-material-ui`
-  ],
-  
+  ],  
 }
